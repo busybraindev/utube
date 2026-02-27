@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./ind.css" />
+  </head>
+  <body>
+    <p>Utube -btn</p>
+    <button class="sb" onclick="sb()">Subscribe</button>
+    <script>
+      function sb() {
+        let sb = document.querySelector(".sb");
+        if (sb.innerHTML === "Subscribe") {
+          sb.innerHTML = "Subscribed";
+          sb.classList.add("ac");
+        } else {
+          sb.innerHTML = "Subscribe";
+          sb.classList.remove("ac");
+        }
+      }
+    </script>
+  </body>
+</html>
